@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <title>Inscription Page</title>
+</head>
+<body>
+    <div class="center">
+        <h1>Page d'inscription</h1>
+        <p>Pour une meilleure expérience, veuillez remplir ce formulaire:</p>
+        <form action="inscription.php" method="POST">
+            <fieldset>
+                <div class="inline">
+                <input type="text" id="nom" name="nom"/>
+                <span></span>
+                <label for="nom">Nom:</label>
+                </div>
+                <div class="inline">
+                <input type="text" id="prenom" name="prenom"/>
+                <span></span>
+                <label for="prenom">Prénom:</label>
+                </div>
+                <div class="inline">
+                <input type="text" id="phone" name="phone"/>
+                <span></span>
+                <label for="phone">Téléphone:</label>
+                </div>
+                <div class="inline">
+                <input type="text" id="adress" name="adress"/>
+                <span></span>
+                <label for="adress">Adresse(Cartier):</label>
+                </div>
+                <div class="inline">
+                <input type="email" id="email" name="email"/>
+                <span></span>
+                <label for="email">Email:</label>
+                </div>
+                <div class="inline">
+                <input type="text" id="password" name="password"/>
+                <span></span>
+                <label for="password">Mots de pass:</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Comment avez-vous entendu parler de nous?</legend>
+                <label class="fond" for="scmedia"><input type="radio" id="scmedia" name="scmedia" class="align"/>Resaux-sociaux</label>
+                <label class="fond" for="entourage"><input type="radio" id="entourage" name="entourage" class="align"/>Entourage</label>
+                <label class="fond" for="reachgoogle"><input type="radio" id="reachgoogle" name="reachgoogle" class="align"/>Moteur de recherche Google</label>
+                <label class="fond" for="other"><input type="radio" id="other" name="other" class="align"/>Autre</label><textarea name="other" id="other" cols="15" rows="5" placeholder="Indiquer ici..."></textarea>
+            </fieldset>
+            <input type="submit" value="S'inscrire"/>
+            <div class="login_link">
+                Vous êtes membre? <a href="connexion.html">Se connecter</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
